@@ -1,0 +1,54 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 80px;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content:space-around; /* places image to the right */
+  align-items: center;
+}
+
+.hero-image img {
+  width: 280px;               /* size of the circle */
+  height: 280px;              /* keeps it square */
+  border-radius: 50%;         /* circular shape */
+  object-fit: cover;          /* fills the circle nicely */
+  object-position: center 30%; /* top fully visible, bottom slightly cropped */
+  border: 4px solid var(--secondary); /* single border */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* subtle shadow */
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);     /* small zoom effect on hover */
+}
+
+/* Responsive for mobile */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .hero-image {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .hero-image img {
+    width: 200px;
+    height: 200px;
+  }
+}

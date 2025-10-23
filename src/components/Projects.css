@@ -1,0 +1,104 @@
+:root {
+  --primary: #4b0082; /* Royal Indigo */
+  --secondary: #00b4d8; /* Sky Blue */
+  --accent: #48c9b0; /* Mint Green */
+  --bg-light: #f8f9fa;
+  --text-dark: #2e2e2e;
+}
+
+.projects {
+  padding: 100px 10%; /* increase left/right spacing */
+  background-color: white;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* slightly smaller cards */
+  gap: 40px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 50px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.project-card {
+  background-color: var(--bg-light);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background-color: white;
+  padding: 20px;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
+
+.tech-stack li {
+  background-color: var(--accent);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.project-links {
+  margin-top: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  background-color: var(--secondary);
+  padding: 8px 16px;
+  margin-right: 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary);
+}

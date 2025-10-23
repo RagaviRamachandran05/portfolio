@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+h2 {
+  color: #004aad;
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+}

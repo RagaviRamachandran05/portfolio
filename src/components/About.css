@@ -1,0 +1,65 @@
+.about {
+  padding: 4rem 5%;
+  background-color: #f9f9f9;
+  color: #0f1a2b;
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* optional vertical centering */
+  flex-direction: column;
+}
+
+.about-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #00d8ff;  /* highlight color */
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers child elements */
+  text-align: center;  /* centers paragraphs and list */
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 800px;    /* limit width for readability */
+  width: 100%;
+}
+
+.about .section-title {
+  font-size: 2rem;
+  color: #0f1a2b;
+  margin-bottom: 2rem;
+}
+
+.about-text p {
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+.resume-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #00d8ff;
+  color: #0f1a2b;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #00b0cc;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-content {
+    padding: 1.5rem;
+  }
+}
