@@ -11,9 +11,8 @@ const Contact = () => {
         or just want to say hello — feel free to reach out. 💬
       </p>
 
-      {/* Left & Right Section Wrapper */}
       <div className="contact-wrapper">
-        {/* Left: Contact Form */}
+        {/* Contact Form */}
         <div className="contact-container">
           <form className="contact-form">
             <div className="form-group">
@@ -29,25 +28,28 @@ const Contact = () => {
               Send Message
             </button>
           </form>
-        </div>
 
-        {/* Right: Social Section */}
-        <div className="contact-socials">
-          <h3>Connect with me</h3>
-          <div className="social-icons">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="icon linkedin">
+          {/* Social Links */}
+          <div className="social-links">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon linkedin"
+            >
               <FaLinkedin />
             </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="icon github">
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon github"
+            >
               <FaGithub />
             </a>
-            <a href="mailto:rragavi054@gmail.com" className="icon email">
+            <a href="mailto:youremail@example.com" className="social-icon email">
               <FaEnvelope />
             </a>
-          </div>
-          <div className="contact-info">
-            <p><strong>Email:</strong> rragavi054@gmail.com</p>
-            <p><strong>Available for:</strong> Internships & Freelance Projects</p>
           </div>
         </div>
       </div>
